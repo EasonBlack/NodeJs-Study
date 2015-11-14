@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="/static/style/bootstrap.css"  type="text/css" rel="stylesheet">
+    <link href="/static/style/bootstrap-theme.css"  type="text/css" rel="stylesheet">
+    <style>
+        .row {
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container"  >
+    <h2>File</h2>
+    <div class="row">
+        <div class="col-sm-12">
+            <input type="file" id="fileinput"  />
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <button id="btnUpload">Upload</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <span id="txtResult"></span>
+        </div>
+    </div>
+</div>
+<script src="/static/vendor/require.js"   data-main="config.js" ></script>
+
+</body>
+
+</html>
