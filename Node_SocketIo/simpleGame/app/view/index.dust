@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<canvas id="canvas" width="420" height="420" style="border:1px solid steelblue" ></canvas>
+</body>
+<script src="/vendor/jquery.min.js"></script>
+ <script src="/socket.io/socket.io.js"></script>
+ <script>
+
+ </script>
+<script src="/static/canvas.grid.js"></script>
+<script src="/static/canvas.grid.rectangular.js"></script>
+<script src="/static/main.js"></script>
+<script>
+
+</script>
+</html>
