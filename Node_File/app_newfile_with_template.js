@@ -1,5 +1,5 @@
 var fs = require('fs');
-dust = require('dustjs-linkedin');
+var dust = require('dustjs-linkedin');
 
 
 var file = 'templates/app_newfile_with_template.1.dust';
