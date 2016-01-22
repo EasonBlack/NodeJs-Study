@@ -19,17 +19,18 @@ gulp.task('minifyjs', function() {
 });
 
 gulp.task('less', function() {
-    return gulp.src(path.start + 'stylesheets/**/*.less')
+
+    return gulp.src(['!'+folder.start + 'stylesheets/bootstrap/*.less', folder.start + 'stylesheets/bootstrap/bootstrap.less' ,  folder.start + 'stylesheets/**/*.less'])
         .pipe(less())
         .pipe(gulp.dest(folder.dist + 'stylesheets'));
 });
 
 gulp.task('copyfile', function() {
-    return gulp.src(folder.start + '/**/*.*')
+    return gulp.src([folder.start + '/**/*.*'])
         .pipe(gulp.dest(folder.dist));  //Êä³ö
 });
 
 
 gulp.task('default', function() {
-    gulp.start('minifyjs','less');
+    gulp.start('minifyjs','less', 'copyfile');
 });
