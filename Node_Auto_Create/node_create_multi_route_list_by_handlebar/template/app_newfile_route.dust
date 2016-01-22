@@ -1,0 +1,6 @@
+{{#routes}}
+.when('{{route}}',{
+  templateUrl: '{{basePath}}/{{name}}/html/{{filename}}.html',
+  controller: '{{controllerName}}Controller'
+})
+{{/routes}}

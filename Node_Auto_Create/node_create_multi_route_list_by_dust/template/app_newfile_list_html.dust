@@ -1,0 +1,44 @@
+<div class="Section">
+    <div class="title-box">
+        <img src=""/> <em>{titleName}</em>
+        <div class="Right">
+            <a class="btn btn-primary" href="javascript:void(0)"  ng-click="toAdd()">添加内容</a>
+        </div>
+    </div>
+    <div class="panel main-panel">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+                <a href="" aria-controls="home"
+                   role="tab" data-toggle="tab">全部内容</a>
+            </li>
+        </ul>
+        <div class="panel-body">
+            <div class="container-fluid">
+                <div>
+
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                            <div class="row" style="margin-top:15px;">
+                                <div class="col-sm-3">
+                                    <select style="float: left; margin-right: 10px;"><option>筛选内容<i class="caret"></i></option></select>
+                                    <span ng-class="{true:'checkd-show',false:'hide'}[haveChk]">
+                                        <i class="glyphicon glyphicon-trash btn btn-default" ng-click="Delete('删除')"></i>
+                                    </span>
+                                </div>
+                                <div class="col-sm-3 Right">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+                                        <input type="text" class="form-control" placeholder="输入关键字搜索" ng-model="name" ng-change="InitPage()"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Content">
+                <div ng-include="'/console/components/List/html/List.html'"></div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+{#routes}
+.when('{route}',{{~n}
+templateUrl: '{basePath}/{name}/html/{filename}.html',{~n}
+controller: '{controllerName}Controller'{~n}
+}){~n}
+
+{/routes}
