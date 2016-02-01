@@ -37,3 +37,4 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 app.use(express.static(path.join(__dirname, '../../vendor')));
 app.use('/',router.home);
 app.use('/url',router.homeurl);
+app.use('/content',router.homecontent);
