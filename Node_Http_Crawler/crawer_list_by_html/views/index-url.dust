@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="/style/bootstrap.css" type="text/css" rel="stylesheet">
+    <style>
+        textarea {
+            width: 100%;
+            height: 400px;
+        }
+
+        .traget_container div {
+            margin:10px;
+        }
+
+        #result-container {
+            margin:10px;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="container"  >
+    <div class="row">
+        <div class="col-md-6 traget_container">
+            <div>
+                <h5>标识</h5>
+                <input id="txt_target" >
+            </div>
+            <div>
+                <h5>内容</h5>
+                <input id="txt_content"></input>
+            </div>
+            <div>
+                <button id="bt1">Click Me</button>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div id="result-container"></div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="/javascript/jquery-1.11.1.js"></script>
+<script>
+    $('#bt1').click(function(){
+        $('#result-container').html('');
+        var obj = {
+            target: $('#txt_target').val(),
+            html: $('#txt_content').val()
+        }
+        $.ajax
+        ({
+            type: "POST",
+            url: "/url/url-test-page",
+            async: false,
+            data: obj,
+            success: function (res){
+                for(var i=0;i<res.length;i++) {
+                    $('#result-container').append(res[i]).append('</br>');
+                }
+            }
+        });
+
+    })
+</script>
+</html>
