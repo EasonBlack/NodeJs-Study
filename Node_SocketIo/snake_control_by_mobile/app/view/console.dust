@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="/static/style/main.css">
+    <style>
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="console up" data-type="u"></div>
+    <div class="console down"  data-type="d"></div>
+    <div class="console left"  data-type="l"></div>
+    <div class="console right"  data-type="r"></div>
+</div>
+
+
+
+</body>
+<script src="/vendor/jquery-1.11.1.js"></script>
+<script src="/vendor/lodash.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/static/script/console.js"></script>
+
+
+</html>

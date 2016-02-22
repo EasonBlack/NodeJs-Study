@@ -1,0 +1,52 @@
+
+@len : 100;
+@topoffset:30;
+@width : @len*1px;
+@height : @len*1px;
+@0_5-width: @len*0.5px;
+@0_5-height: @len*0.5px;
+@1_5-width: @len*1.5px;
+@1_5-height: @len*1.5px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position:relative;
+  width:100%;
+  height:100%;
+}
+
+.console {
+  position: absolute;
+  width: @width;
+  height:@height;
+  background-color: #666666;
+}
+
+.up {
+   left: calc(~"50%" - @0_5-width);
+   top : @topoffset*1px;
+ }
+
+.down {
+  left: calc(~"50%" - @0_5-width);
+  top : (@topoffset+2*@len)*1px;
+}
+
+.left {
+  left:calc(~"50%" - @1_5-width);
+  top: (@topoffset+@len)*1px;
+}
+
+.right {
+  left:calc(~"50% " - -@0_5-width );
+  top:(@topoffset+@len)*1px;
+}
