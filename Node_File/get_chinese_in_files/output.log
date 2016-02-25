@@ -1,0 +1,1268 @@
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\coupon_index.html
+"":"请输入券码",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\coupon_index.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\views\index.html
+"":"互联商户后台",
+"":"登录系统",
+"":"请输入用户名",
+"":"请输入密码",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\views\index.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\app\appConstant.js
+"":"主页管理",
+"":"新消息",
+"":"卡券统计",
+"":"顾客管理",
+"":"顾客总览",
+"":"查看顾客的实时统计分析，以及目前在店的顾客情况。",
+"":"顾客列表",
+"":"查看顾客的基本信息。",
+"":"顾客分组",
+"":"管理顾客分组。",
+"":"高级功能",
+"":"本版块的高级功能，包括修改顾客的用户名密码等。",
+"":"用户管理",
+"":"管理使用此系统的用户。可为你的同事添加后台账号、设定他们的角色。",
+"":"角色管理",
+"":"管理您的角色。每个角色都可以拥有不同的操作权限。",
+"":"本版块的高级功能，包括修改用户密码等。",
+"":"店铺管理",
+"":"品牌管理",
+"":"商场管理",
+"":"商圈管理",
+"":"场景卡管理",
+"":"可以发布已经通过审核的场景卡，也可随时暂停已上线的场景卡。",
+"":"内容卡",
+"":"管理或创建内容卡。内容卡是各商户推广自己的重要方式。",
+"":"服务卡",
+"":"维护服务卡的内容。",
+"":"系统卡",
+"":"维护系统卡的内容。",
+"":"社交卡",
+"":"维护社交卡的内容。",
+"":"分类管理",
+"":"本版块的高级功能，包括跳过本机构审核直接提交卡片。",
+"":"卡券",
+"":"优惠券",
+"":"管理优惠券。",
+"":"代金券",
+"":"管理代金券。",
+"":"本版块的高级功能。",
+"":"审批",
+"":"推送",
+"":"统计",
+"":"热点图",
+"":"查看商场或门店实时的热点数据。",
+"":"统计报表",
+"":"管理各种商业数据。",
+"":"添加",
+"":"删除",
+"":"修改",
+"":"浏览",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\app\appConstant.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\app\ErrorHandlers.js
+"":"服务器返回错误，未知异常。",
+"":"该兑换码已失效",
+"":"不在日兑换时间内错误",
+"":"超过每日兑换最大量",
+"":"请不要非法访问，请登录",
+"":"认证失败，进入到重新登录画面",
+"":"未找到指定服务接口",
+"":"服务器处理请求失败",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\app\ErrorHandlers.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\app\Modules.js
+"":"推广",
+"":"推送管理",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\app\Modules.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\directive\baidumap.directive.js
+"":"济南",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\directive\baidumap.directive.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\services\beacon_service.js
+"":"济南世茂国际广场",
+"":"世茂集团",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\services\beacon_service.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\services\push_service.js
+"":"卡西欧盛夏推送",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\services\push_service.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\node_modules\bcrypt-nodejs\test-sync.js
+"":"港",
+"":"漯",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\node_modules\bcrypt-nodejs\test-sync.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\public\js\Homepage_Coupon.js
+"":"用户名或密码错误。",
+"":"请输入用户名。",
+"":"请输入密码。",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\public\js\Homepage_Coupon.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\node_modules\moment\locale\ja.js
+"":"午後",
+"":"午前",
+"":"数秒",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\node_modules\moment\locale\ja.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\node_modules\moment\locale\zh-cn.js
+"":"凌晨",
+"":"早上",
+"":"上午",
+"":"下午",
+"":"晚上",
+"":"中午",
+"":"日",
+"":"月",
+"":"周",
+"":"几秒",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\node_modules\moment\locale\zh-cn.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\node_modules\moment\locale\zh-tw.js
+"":"週",
+"":"幾秒",
+"":"一分鐘",
+"":"一小時",
+"":"一天",
+"":"一個月",
+"":"一年",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\node_modules\moment\locale\zh-tw.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\components\List\html\List.html
+"":"没有找到相关数据",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\components\List\html\List.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\components\Sidebar\html\Sidebar.html
+"":"个人信息",
+"":"登出",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\components\Sidebar\html\Sidebar.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\banner\html\banner_edit.html
+"":"名称",
+"":"顺序序号",
+"":"显示开始时间",
+"":"显示结束时间",
+"":"取消",
+"":"保存",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\banner\html\banner_edit.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\banner\html\banner_list.html
+"":"首页维护",
+"":"添加内容",
+"":"全部内容",
+"":"输入关键字搜索",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\banner\html\banner_list.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\banner\js\banner_controller.js
+"":"待上线",
+"":"上线时间",
+"":"结束时间",
+"":"状态",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\banner\js\banner_controller.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\campaign\html\push_edit.html
+"":"推送预览",
+"":"推送标题",
+"":"推送摘要",
+"":"保存并提交",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\campaign\html\push_edit.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\campaign\html\push_edit_attribute.partial.html
+"":"其它规则",
+"":"标签",
+"":"推送次数限制",
+"":"请选择",
+"":"限制单位",
+"":"每天",
+"":"限制次数",
+"":"两次推送间隔时间",
+"":"添加标签",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\campaign\html\push_edit_attribute.partial.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\campaign\html\push_edit_basic.partial.html
+"":"基本信息",
+"":"推送的基本信息",
+"":"推送名称",
+"":"推送所有方",
+"":"推送内容",
+"":"编辑推送时用户手机上出现的内容",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\campaign\html\push_edit_basic.partial.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\campaign\html\push_edit_content.partial.html
+"":"编辑卡上显示的内容",
+"":"背景图片",
+"":"替换图片",
+"":"详情内容",
+"":"跳转按钮上显示的文字。",
+"":"预览详情内容",
+"":"添加卡券",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\campaign\html\push_edit_content.partial.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\campaign\html\push_edit_trigger.partial.html
+"":"目标人群",
+"":"选取方式",
+"":"所有顾客",
+"":"从顾客组添加",
+"":"用户组",
+"":"请选择一个顾客组",
+"":"时间选项",
+"":"开始时间",
+"":"触发方式",
+"":"所有时间段",
+"":"在特定时间段显示",
+"":"时间",
+"":"从",
+"":"至",
+"":"地点选项",
+"":"所有地点",
+"":"当客人在我的店内",
+"":"当客人停留在某个地理范围内",
+"":"门店",
+"":"半径",
+"":"中心纬度",
+"":"中心经度",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\campaign\html\push_edit_trigger.partial.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\campaign\html\push_list.html
+"":"优惠券推送",
+"":"图文推送",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\campaign\html\push_list.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\campaign\js\push_controller.js
+"":"进行中",
+"":"所有方",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\campaign\js\push_controller.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\campaign\js\push_edit_controller.js
+"":"仅一次",
+"":"多次",
+"":"不限",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\campaign\js\push_edit_controller.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\html\cards.html
+"":"场景卡",
+"":"添加场景卡",
+"":"所有场景卡",
+"":"发布",
+"":"暂停",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\html\cards.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\html\card_arty.html
+"":"场景卡预览",
+"":"图片",
+"":"场景卡的基本信息，方便识别和分类",
+"":"场景卡内容",
+"":"功能组件",
+"":"控件",
+"":"请选择一个控件",
+"":"添加控件",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\html\card_arty.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\html\card_arty_attribute.html
+"":"手动设置卡片顺序",
+"":"推送设置",
+"":"推送弹出式卡片",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\html\card_arty_attribute.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\html\card_arty_trigger.html
+"":"天气选项",
+"":"所有天气",
+"":"上海",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\html\card_arty_trigger.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\html\card_attribute.html
+"":"未完成不可发布",
+"":"预览图文内容",
+"":"优惠",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\html\card_attribute.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\html\card_basic_information.template.html
+"":"卡片名称",
+"":"卡片分类",
+"":"城市",
+"":"商场",
+"":"楼层",
+"":"品牌",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\html\card_basic_information.template.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\html\card_choice.html
+"":"场景编辑卡",
+"":"您可以选择一个卡片模板，之后在卡片上自定义添加内容。适合各种资讯推广信息。",
+"":"选择",
+"":"多图文",
+"":"把多篇内容同时传递给用户。",
+"":"九宫格",
+"":"图片模板，将多张图片一次性传达给用户。",
+"":"开发中",
+"":"电影",
+"":"承载电影影讯、评论的专用模板。",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\html\card_choice.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\html\card_edit.html
+"":"卡片标题",
+"":"卡片摘要",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\html\card_edit.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\html\card_edit_movie_content.partial.html
+"":"编辑电影",
+"":"编辑卡上显示的电影内容",
+"":"电影图片",
+"":"电影状态",
+"":"即将上映",
+"":"已经上映",
+"":"详情连接",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\html\card_edit_movie_content.partial.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\html\card_multiple_content.template.html
+"":"图文内容",
+"":"删除该内容",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\html\card_multiple_content.template.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\html\card_mutiple.html
+"":"主题编辑",
+"":"编辑整张卡片上的标题，摘要",
+"":"模块编辑",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\html\card_mutiple.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\html\card_nine_photos.html
+"":"旅游",
+"":"卡片提供方",
+"":"场景卡摘要",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\html\card_nine_photos.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\js\cards_controller.js
+"":"已上线",
+"":"草稿",
+"":"审核中",
+"":"审核未通过",
+"":"已结束",
+"":"缩略图",
+"":"卡片类型",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\js\cards_controller.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\js\card_arty_attribute_controller.js
+"":"请输入标签",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\js\card_arty_attribute_controller.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\js\card_arty_controller.js
+"":"场景卡图片",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\js\card_arty_controller.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\js\card_arty_trigger_controller.js
+"":"开始日期不得晚于结束日期。",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\js\card_arty_trigger_controller.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\js\card_edit_controller.js
+"":"请输入",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\js\card_edit_controller.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\js\card_movie_controller.js
+"":"中文名",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\cards\js\card_movie_controller.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\coupons\html\coupons.html
+"":"全部卡券",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\coupons\html\coupons.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\coupons\html\coupons_admin_down.html
+"":"兑换清单",
+"":"兑换和领取清单",
+"":"下载",
+"":"返回",
+"":"选择开始日期",
+"":"选择结束日期",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\coupons\html\coupons_admin_down.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\coupons\html\coupons_redeem.html
+"":"优惠详情",
+"":"使用规则",
+"":"兑换历史",
+"":"重新输入",
+"":"确认兑换",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\coupons\html\coupons_redeem.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\coupons\html\coupon_add.html
+"":"复制",
+"":"卡券预览",
+"":"有效期",
+"":"提交",
+"":"活动方",
+"":"消费满",
+"":"折扣说明",
+"":"元",
+"":"减",
+"":"折扣",
+"":"折",
+"":"卡券内容",
+"":"草稿，不可提交",
+"":"草稿，可提交",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\coupons\html\coupon_add.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\coupons\html\coupon_content.partial.html
+"":"卡券名称与活动方信息",
+"":"卡券名称",
+"":"活动方数量",
+"":"单个",
+"":"多个",
+"":"从商场选择",
+"":"从品牌选择",
+"":"活动商场",
+"":"活动品牌",
+"":"活动门店",
+"":"请至少选择两个品牌。",
+"":"联合品牌名称",
+"":"卡券上所显示的标题、优惠信息等的维护",
+"":"卡券标题",
+"":"优惠类型",
+"":"内容一",
+"":"内容二",
+"":"优惠券详情",
+"":"图文详情",
+"":"添加品牌",
+"":"添加门店",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\coupons\html\coupon_content.partial.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\coupons\html\coupon_detail.html
+"":"卡券类型",
+"":"卡券状态",
+"":"已用数量",
+"":"礼券规则",
+"":"适用产品",
+"":"全场限时五折",
+"":"使用开始时间",
+"":"使用结束时间",
+"":"同一用户可领取总次数",
+"":"每日领取总次数",
+"":"同一用户每日可领取次数",
+"":"同一用户可重复使用一张优惠券",
+"":"确定",
+"":"预览卡券内容",
+"":"删除该卡券",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\coupons\html\coupon_detail.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\coupons\html\coupon_rule.partial.html
+"":"可以使用卡券的产品类型",
+"":"所有产品",
+"":"显示规则",
+"":"卡券总量",
+"":"每日显示时间从",
+"":"领取规则",
+"":"每日可领取总量",
+"":"领取开始时间",
+"":"领取结束时间",
+"":"每日领取时间从",
+"":"兑换规则",
+"":"允许兑换总数",
+"":"每日可兑换总量",
+"":"兑换开始时间",
+"":"兑换结束时间",
+"":"每日兑换时间从",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\coupons\html\coupon_rule.partial.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\coupons\js\coupons_controller.js
+"":"即将开始",
+"":"卡卷名称",
+"":"总领取数量",
+"":"总兑换数量",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\coupons\js\coupons_controller.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\coupons\js\coupons_down_controller.js
+"":"请选择开始时间",
+"":"请选择结束时间",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\coupons\js\coupons_down_controller.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\coupons\js\coupons_redeem_controller.js
+"":"请输入兑换码",
+"":"兑换码错误",
+"":"没有查询到相关记录",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\coupons\js\coupons_redeem_controller.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\coupons\js\coupon_add.service.js
+"":"请最少添加两个品牌",
+"":"请最少添加两家门店",
+"":"允许兑换总量",
+"":"允许兑换总量不可大于卡券总量。",
+"":"显示开始时间不得晚于显示结束时间。",
+"":"领取开始时间不可晚于领取结束时间。",
+"":"领取开始时间不可晚于显示结束时间。",
+"":"兑换开始时间不可晚于兑换结束时间。",
+"":"兑换结束时间不可早于领取结束时间。",
+"":"每日可兑换总次数",
+"":"优惠卷图片",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\coupons\js\coupon_add.service.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\coupons\js\coupon_add_controller.js
+"":"百分比折扣卷",
+"":"自定义",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\coupons\js\coupon_add_controller.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\coupons\js\coupon_detail_controller.js
+"":"满减",
+"":"其他",
+"":"允许",
+"":"禁止",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\coupons\js\coupon_detail_controller.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\dashboard\html\app_edit.html
+"":"总激活用户数",
+"":"总注册用户数",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\dashboard\html\app_edit.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\dashboard\html\main.html
+"":"人",
+"":"次",
+"":"昨日启动次数",
+"":"小时",
+"":"分钟",
+"":"个",
+"":"份",
+"":"平均单用户兑换卡券数",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\dashboard\html\main.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\homepage\html\homepage.html
+"":"下午好，高富帅",
+"":"开始管理我的卡片",
+"":"最新动态",
+"":"查看所有动态",
+"":"我的商铺",
+"":"徐家汇店",
+"":"今天",
+"":"详情",
+"":"查看我的商铺",
+"":"我的世贸币",
+"":"世贸币",
+"":"购买世贸币",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\homepage\html\homepage.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\report\js\report_controller.js
+"":"请选择要删除的报表",
+"":"请选择要下载的报表",
+"":"请选择要预览的报表",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\report\js\report_controller.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\roles\html\roles.html
+"":"添加角色",
+"":"全部角色",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\roles\html\roles.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\roles\html\role_add.html
+"":"角色信息",
+"":"创建角色。",
+"":"所属机构类型",
+"":"城区管理层",
+"":"机构",
+"":"角色",
+"":"管理员",
+"":"角色描述",
+"":"分配权限",
+"":"权限说明",
+"":"已选权限",
+"":"已经选择的权限会以列表的形式显示在这里。",
+"":"权限分类",
+"":"权限",
+"":"操作权限",
+"":"保存至权限列表",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\roles\html\role_add.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\roles\html\role_edit.html
+"":"编辑",
+"":"地区管理层",
+"":"删除该角色",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\roles\html\role_edit.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\roles\js\roles_controller.js
+"":"角色名称",
+"":"所属机构",
+"":"权限数",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\roles\js\roles_controller.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\shops\html\brands.html
+"":"全部品牌",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\shops\html\brands.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\shops\html\brand_add.html
+"":"品牌的名称等基本信息。",
+"":"品牌名称",
+"":"品牌别称",
+"":"品牌简介",
+"":"图片维护",
+"":"在这里上传，修改品牌的相关信息。",
+"":"品牌背景图片",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\shops\html\brand_add.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\shops\html\shops.html
+"":"门店管理",
+"":"全部门店",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\shops\html\shops.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\shops\html\shop_add.html
+"":"门店名称",
+"":"英文名",
+"":"所属品牌",
+"":"所属省份",
+"":"所属城市",
+"":"所属商场",
+"":"门店信息",
+"":"门店在某个商场内的位置或在商圈的详细地址维护。",
+"":"所属楼层",
+"":"交通信息",
+"":"门店图片",
+"":"上传图片",
+"":"门店属性",
+"":"联系电话",
+"":"门店广播",
+"":"服务内容",
+"":"营业开始",
+"":"营业结束",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\shops\html\shop_add.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\statistics\html\customer_analytics.html
+"":"世贸店",
+"":"请选择数据类型",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\statistics\html\customer_analytics.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\statistics\html\statistics.html
+"":"商城",
+"":"济南世贸国际广场",
+"":"顾客类型",
+"":"查看热点图",
+"":"刷新",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\statistics\html\statistics.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\statistics\html\statistics_add.html
+"":"更新",
+"":"每日数据维护",
+"":"周活跃率",
+"":"每日人均启动次数",
+"":"昨日新增激活用户数",
+"":"昨日新增注册用户数",
+"":"累计卡券总数",
+"":"总领取卡券数",
+"":"总兑换卡券数",
+"":"平均单用户领取卡券数",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\statistics\html\statistics_add.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\statistics\js\beacon-controller.js
+"":"营业中",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\statistics\js\beacon-controller.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\statistics\js\beacon_map_canvas.directive.js
+"":"导航",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\statistics\js\beacon_map_canvas.directive.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\statistics\js\customer_analytics_controller.js
+"":"单日间来访统计",
+"":"一周内日停留时间统计",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\statistics\js\customer_analytics_controller.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\statistics\js\statistics_add_controller.js
+"":"更新成功",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\statistics\js\statistics_add_controller.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\users\html\users.html
+"":"用户",
+"":"全部用户",
+"":"筛选用户",
+"":"添加用户",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\users\html\users.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\users\html\user_details.html
+"":"个人资料",
+"":"登录信息",
+"":"用户的登录名、密码等信息。",
+"":"登录用户名",
+"":"修改用户名和密码",
+"":"密码",
+"":"显示密码",
+"":"隐藏密码",
+"":"确认密码",
+"":"定义用户的角色，不同的角色对应着不同的权限。",
+"":"用户头像",
+"":"上传头像",
+"":"全名",
+"":"联系邮箱",
+"":"偏好设置",
+"":"系统偏好",
+"":"语言",
+"":"英语",
+"":"中文",
+"":"我的权限",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\users\html\user_details.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\users\html\user_edit.html
+"":"用户角色",
+"":"若您需要编辑当前角色的权限，请前往角色管理并编辑您想更改权限的角色。",
+"":"机构名称",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\users\html\user_edit.html
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\users\js\users_controller.js
+"":"用户名",
+"":"邮箱",
+"":"男",
+"":"女",
+"":"不明",
+"":"伊斯兰堡",
+"":"德国",
+"":"英国",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\users\js\users_controller.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\users\js\user_details_controller.js
+"":"最高管理层",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\users\js\user_details_controller.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\users\js\user_edit_controller.js
+"":"合资公司总部管理层",
+"":"地方管理层",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\console\interface\users\js\user_edit_controller.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\node_modules\express\node_modules\buffer-crc32\README.md
+"":"自動販売機",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\node_modules\express\node_modules\buffer-crc32\README.md
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\node_modules\faker\build\build\faker.js
+"":"北海道",
+"":"青森県",
+"":"岩手県",
+"":"宮城県",
+"":"秋田県",
+"":"山形県",
+"":"福島県",
+"":"茨城県",
+"":"栃木県",
+"":"群馬県",
+"":"埼玉県",
+"":"千葉県",
+"":"東京都",
+"":"神奈川県",
+"":"新潟県",
+"":"富山県",
+"":"石川県",
+"":"福井県",
+"":"山梨県",
+"":"長野県",
+"":"岐阜県",
+"":"静岡県",
+"":"愛知県",
+"":"三重県",
+"":"滋賀県",
+"":"京都府",
+"":"大阪府",
+"":"兵庫県",
+"":"奈良県",
+"":"和歌山県",
+"":"鳥取県",
+"":"島根県",
+"":"岡山県",
+"":"広島県",
+"":"山口県",
+"":"徳島県",
+"":"香川県",
+"":"愛媛県",
+"":"高知県",
+"":"福岡県",
+"":"佐賀県",
+"":"長崎県",
+"":"熊本県",
+"":"大分県",
+"":"宮崎県",
+"":"鹿児島県",
+"":"沖縄県",
+"":"北",
+"":"東",
+"":"西",
+"":"南",
+"":"新",
+"":"湖",
+"":"市",
+"":"区",
+"":"町",
+"":"村",
+"":"佐藤",
+"":"鈴木",
+"":"高橋",
+"":"田中",
+"":"渡辺",
+"":"伊藤",
+"":"山本",
+"":"中村",
+"":"小林",
+"":"加藤",
+"":"吉田",
+"":"山田",
+"":"山口",
+"":"斎藤",
+"":"松本",
+"":"井上",
+"":"木村",
+"":"林",
+"":"清水",
+"":"大翔",
+"":"蓮",
+"":"颯太",
+"":"樹",
+"":"大和",
+"":"陽翔",
+"":"陸斗",
+"":"太一",
+"":"海翔",
+"":"蒼空",
+"":"翼",
+"":"陽菜",
+"":"結愛",
+"":"結衣",
+"":"杏",
+"":"莉子",
+"":"美羽",
+"":"結菜",
+"":"心愛",
+"":"愛菜",
+"":"美咲",
+"":"长",
+"":"上",
+"":"诸",
+"":"宁",
+"":"珠",
+"":"武",
+"":"衡",
+"":"成",
+"":"福",
+"":"厦",
+"":"贵",
+"":"吉",
+"":"海",
+"":"太",
+"":"济",
+"":"安",
+"":"包",
+"":"沙市",
+"":"京市",
+"":"宁市",
+"":"安市",
+"":"乡县",
+"":"海市",
+"":"码市",
+"":"汉市",
+"":"阳市",
+"":"都市",
+"":"州市",
+"":"门市",
+"":"口市",
+"":"原市",
+"":"南市",
+"":"徽市",
+"":"林市",
+"":"头市",
+"":"巷",
+"":"街",
+"":"路",
+"":"桥",
+"":"侬",
+"":"旁",
+"":"中心",
+"":"栋",
+"":"北京市",
+"":"上海市",
+"":"天津市",
+"":"重庆市",
+"":"黑龙江省",
+"":"吉林省",
+"":"辽宁省",
+"":"内蒙古",
+"":"河北省",
+"":"新疆",
+"":"甘肃省",
+"":"青海省",
+"":"陕西省",
+"":"宁夏",
+"":"河南省",
+"":"山东省",
+"":"山西省",
+"":"安徽省",
+"":"湖北省",
+"":"湖南省",
+"":"江苏省",
+"":"四川省",
+"":"贵州省",
+"":"云南省",
+"":"广西省",
+"":"西藏",
+"":"浙江省",
+"":"江西省",
+"":"广东省",
+"":"福建省",
+"":"台湾省",
+"":"海南省",
+"":"香港",
+"":"澳门",
+"":"京",
+"":"沪",
+"":"津",
+"":"渝",
+"":"黑",
+"":"辽",
+"":"蒙",
+"":"冀",
+"":"甘",
+"":"青",
+"":"陕",
+"":"豫",
+"":"鲁",
+"":"晋",
+"":"皖",
+"":"鄂",
+"":"湘",
+"":"苏",
+"":"川",
+"":"黔",
+"":"滇",
+"":"桂",
+"":"藏",
+"":"浙",
+"":"赣",
+"":"粤",
+"":"闽",
+"":"台",
+"":"琼",
+"":"澳",
+"":"中国",
+"":"王",
+"":"李",
+"":"张",
+"":"刘",
+"":"陈",
+"":"杨",
+"":"黄",
+"":"吴",
+"":"赵",
+"":"徐",
+"":"孙",
+"":"马",
+"":"朱",
+"":"胡",
+"":"郭",
+"":"何",
+"":"高",
+"":"罗",
+"":"郑",
+"":"梁",
+"":"谢",
+"":"宋",
+"":"唐",
+"":"许",
+"":"邓",
+"":"冯",
+"":"韩",
+"":"曹",
+"":"曾",
+"":"彭",
+"":"萧",
+"":"蔡",
+"":"潘",
+"":"田",
+"":"董",
+"":"袁",
+"":"于",
+"":"余",
+"":"叶",
+"":"蒋",
+"":"杜",
+"":"魏",
+"":"程",
+"":"吕",
+"":"丁",
+"":"沈",
+"":"任",
+"":"姚",
+"":"卢",
+"":"傅",
+"":"钟",
+"":"姜",
+"":"崔",
+"":"谭",
+"":"廖",
+"":"范",
+"":"汪",
+"":"陆",
+"":"金",
+"":"石",
+"":"戴",
+"":"贾",
+"":"韦",
+"":"夏",
+"":"邱",
+"":"方",
+"":"侯",
+"":"邹",
+"":"熊",
+"":"孟",
+"":"秦",
+"":"白",
+"":"江",
+"":"阎",
+"":"薛",
+"":"尹",
+"":"段",
+"":"雷",
+"":"黎",
+"":"史",
+"":"龙",
+"":"陶",
+"":"贺",
+"":"顾",
+"":"毛",
+"":"郝",
+"":"龚",
+"":"邵",
+"":"万",
+"":"钱",
+"":"严",
+"":"赖",
+"":"覃",
+"":"洪",
+"":"莫",
+"":"孔",
+"":"绍齐",
+"":"博文",
+"":"梓晨",
+"":"胤祥",
+"":"瑞霖",
+"":"明哲",
+"":"天翊",
+"":"凯瑞",
+"":"健雄",
+"":"耀杰",
+"":"潇然",
+"":"子涵",
+"":"越彬",
+"":"钰轩",
+"":"智辉",
+"":"致远",
+"":"俊驰",
+"":"雨泽",
+"":"烨磊",
+"":"晟睿",
+"":"文昊",
+"":"修洁",
+"":"黎昕",
+"":"远航",
+"":"旭尧",
+"":"鸿涛",
+"":"伟祺",
+"":"荣轩",
+"":"越泽",
+"":"浩宇",
+"":"瑾瑜",
+"":"皓轩",
+"":"擎苍",
+"":"擎宇",
+"":"志泽",
+"":"子轩",
+"":"睿渊",
+"":"弘文",
+"":"哲瀚",
+"":"楷瑞",
+"":"建辉",
+"":"晋鹏",
+"":"天磊",
+"":"绍辉",
+"":"泽洋",
+"":"鑫磊",
+"":"鹏煊",
+"":"昊强",
+"":"伟宸",
+"":"博超",
+"":"君浩",
+"":"子骞",
+"":"鹏涛",
+"":"炎彬",
+"":"鹤轩",
+"":"风华",
+"":"靖琪",
+"":"明辉",
+"":"伟诚",
+"":"明轩",
+"":"健柏",
+"":"修杰",
+"":"峻熙",
+"":"嘉懿",
+"":"煜城",
+"":"懿轩",
+"":"烨伟",
+"":"苑博",
+"":"伟泽",
+"":"熠彤",
+"":"鸿煊",
+"":"博涛",
+"":"烨霖",
+"":"烨华",
+"":"煜祺",
+"":"智宸",
+"":"正豪",
+"":"昊然",
+"":"明杰",
+"":"立诚",
+"":"立轩",
+"":"立辉",
+"":"鑫鹏",
+"":"昊天",
+"":"思聪",
+"":"展鹏",
+"":"笑愚",
+"":"志强",
+"":"炫明",
+"":"雪松",
+"":"思源",
+"":"智渊",
+"":"思淼",
+"":"晓啸",
+"":"天宇",
+"":"浩然",
+"":"文轩",
+"":"鹭洋",
+"":"振家",
+"":"乐驹",
+"":"晓博",
+"":"文博",
+"":"昊焱",
+"":"立果",
+"":"金鑫",
+"":"锦程",
+"":"嘉熙",
+"":"鹏飞",
+"":"子默",
+"":"思远",
+"":"浩轩",
+"":"语堂",
+"":"聪健",
+"":"明",
+"":"文",
+"":"果",
+"":"思",
+"":"鹏",
+"":"驰",
+"":"涛",
+"":"琪",
+"":"浩",
+"":"航",
+"":"彬",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\node_modules\faker\build\build\faker.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\public\js\datepicker\scripts\datePicker.js
+"":"一",
+"":"二",
+"":"三",
+"":"四",
+"":"五",
+"":"六",
+"":"一月",
+"":"二月",
+"":"三月",
+"":"四月",
+"":"五月",
+"":"六月",
+"":"七月",
+"":"八月",
+"":"九月",
+"":"十月",
+"":"十一月",
+"":"十二月",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\public\js\datepicker\scripts\datePicker.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\node_modules\grunt\node_modules\iconv-lite\test\big5-test.js
+"":"測試",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\node_modules\grunt\node_modules\iconv-lite\test\big5-test.js
+
+
+//start: F:\Appconomy\anna_wang\Shimao_Server\mlife\node_modules\grunt\node_modules\js-yaml\node_modules\esprima\test\test.js
+"":"日本語",
+//end: F:\Appconomy\anna_wang\Shimao_Server\mlife\node_modules\grunt\node_modules\js-yaml\node_modules\esprima\test\test.js
+
+
