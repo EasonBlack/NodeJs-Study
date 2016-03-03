@@ -20,24 +20,6 @@ app.get('/', function (req, res) {
     res.render('index.html');
 });
 
-app.get('/getall', function (req, res) {
-    var imagePath = 'image';
-    fs.readdir(imagePath, function(err, files) {
-        var result = [];
-        if (err) return;
-        files.forEach(function(f) {
-            var  stats = fs.statSync(imagePath + '\\' + f);
-            if(!stats.isDirectory()) {
-                var _item = {};
-                _item.src= '/image/' + f;
-                result.push(_item);
-            }
-        });
-        console.log(result);
-        res.send(result);
-    });
-});
-
 app.post('/update', function (req, res) {
     //console.log(req.body);
     var name = req.body.name;
