@@ -8,16 +8,23 @@ var app = express();
 app.listen(3000, function () {
     console.log('connect success!');
 });
+//app.set('views', __dirname + '/public');
+//app.engine('html', require('hogan-express'));
 
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 
-app.use(express.static(path.join(__dirname, 'public')));
+//app.use(express.static(path.join(__dirname, 'public')));
 app.use('/vendor', express.static(path.join(__dirname, '../../vendor')));
 app.use('/image', express.static(path.join(__dirname, 'image')));
 
 app.get('/', function (req, res) {
-    res.render('index.html');
+    //res.render('index.html');
+    res.sendfile(__dirname + '/public/index.html');
+});
+
+app.get('/m', function (req, res) {
+    res.sendfile(__dirname + '/public/multi.html');
 });
 
 app.get('/getall', function (req, res) {
@@ -29,6 +36,7 @@ app.get('/getall', function (req, res) {
             var  stats = fs.statSync(imagePath + '\\' + f);
             if(!stats.isDirectory()) {
                 var _item = {};
+                _item.name = f;
                 _item.src= '/image/' + f;
                 result.push(_item);
             }

@@ -12,6 +12,7 @@
     "express": "~4.0.0",
     "express-dustjs": "^1.1.1",
     "handlebars": "^4.0.5",
+    "hogan-express": "^0.5.2",
     "iconv": "^2.1.11",
     "iconv-lite": "^0.4.13",
     "lodash": "^3.10.1",

@@ -60,22 +60,19 @@
     </style>
 </head>
 <body>
-
 <div class="main" ng-app="app" ng-controller="appCtrl">
-    <div class="dropzone" drop-zone file="image" file-name="imageFileName">
+    <div class="dropzone" drop-zone >
     </div>
     <div class="item-container">
         <ul class="item-list">
             <li ng-repeat="item in items">
                 <a href="javascript:void(0)" data-toggle="modal" data-target="#bigImgContainer" ng-click="page.selectedImg = item.src ">
-                    <img class="item-image"  src="{{item.src}}"/>
+                    <img class="item-image"  ng-src="{{item.src}}"/>
                 </a>
             </li>
         </ul>
     </div>
-    <div class="image-container">
-        <img id="targetImg" ng-src={{image}}/>
-    </div>
+
 
     <div  class="modal fade" id="bigImgContainer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -117,19 +114,15 @@
             .directive('dropZone', ['$http', function ($http) {
                 return {
                     restrict: 'A',
-                    scope: {
-                        file: '=',
-                        fileName: '='
-                    },
                     link: function (scope, element, attrs) {
 
-                        uploadImage = function () {
+                        uploadImage = function (file,name) {
                             $http({
                                 method: 'POST',
                                 url: '/update',
                                 data: {
-                                    img: scope.file.split(',')[1],
-                                    name: scope.fileName
+                                    img: file.split(',')[1],
+                                    name: name
                                 }
                             }).then(function (response) {
                                 alert(response.data);
@@ -146,26 +139,25 @@
                         };
 
                         processDrop = function (event) {
-                            var file, name, reader, size, type;
+                            var files, name, size, type;
                             if (event != null) {
                                 event.preventDefault();
                             }
-                            reader = new FileReader();
-                            file = event.originalEvent.dataTransfer.files[0];
-                            name = file.name;
-                            type = file.type;
-                            size = file.size;
-                            reader.readAsDataURL(file);
 
-                            reader.onload = function (evt) {
-                                scope.$apply(function () {
-                                    scope.file = evt.target.result;
-                                    if (angular.isString(name)) {
-                                        scope.fileName = name;
-                                    }
-                                    uploadImage();
-                                });
-                            };
+                            files = event.originalEvent.dataTransfer.files;
+                            for(var i = 0,ilen=files.length;i<ilen;i++){
+                                var file= files[i];
+                                var  reader = new FileReader();
+                                var name = file.name;
+                                reader.readAsDataURL(file);
+
+                                reader.onload = function (evt) {
+                                    scope.$apply(function () {
+                                        var _file = evt.target.result;
+                                        uploadImage(_file,name);
+                                    });
+                                };
+                            }
                         }
 
                         element.on('dragover', processDragOverOrEnter);
