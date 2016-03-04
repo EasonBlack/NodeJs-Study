@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="/vendor/style/bootstrap.css" rel="stylesheet"/>
+    <link href="/vendor/style/bootstrap-theme.css" rel="stylesheet"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body, .main {
+            width: 100%;
+            height: 100%;
+        }
+
+        .main {
+            position: relative;
+        }
+
+        .dropzone {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #333333;
+        }
+
+        .image-container {
+            display: block;
+            position: fixed;
+            left: 100px;
+            top: 100px;
+        }
+
+        .image-container img {
+            width: 400px;
+            height: 400px;
+            display: none;
+        }
+
+        .item-container {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+
+        .item-list {
+            list-style: none;
+        }
+
+        .item-list li {
+            margin-bottom: 10px;
+        }
+
+        .item-wrap {
+            display: block;
+            position: relative;
+        }
+
+        .item-image {
+            width: 100px;
+            height: 100px;
+        }
+
+        .item-wrap:hover > .delete-button .delete-icon {
+            display: block
+        }
+
+        .delete-button {
+            position: absolute;
+            display: block;
+            top: 0;
+            right: 0;
+
+        }
+
+        .delete-icon {
+            display: none;
+            font-size: 18px;
+            transition: transform 0.2s;
+        }
+
+        .delete-icon.active {
+            transform: rotate(90deg);
+        }
+
+        .delete-icon.active:hover {
+            color: #842210;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="main" ng-app="app" ng-controller="appCtrl">
+    <div class="dropzone" drop-zone>
+    </div>
+    <div class="item-container">
+        <ul class="item-list">
+            <li ng-repeat="item in items">
+                <a class="item-wrap" data-toggle="modal" data-target="#bigImgContainer"
+                   ng-click="page.selectedImg = item.file ">
+                    <img class="item-image" ng-src="{{item.file}}"/>
+
+                    <div class="delete-button">
+                        <span class="glyphicon glyphicon-remove delete-icon"
+                              ng-class="{true:'active'}[page.selectedDelete == item.file]"
+                              ng-click="itemDelete($event)"></span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="modal fade" id="bigImgContainer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class='modal-body' style="padding: 0;">
+                    <img src="{{page.selectedImg}}">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+<script src="/vendor/javascript/jquery-1.11.1.js"></script>
+<script src="/vendor/javascript/angular.js"></script>
+<script src="/vendor/javascript/bootstrap.js"></script>
+<script src="/vendor/javascript/ng-lodash.js"></script>
+<script>
+    angular.module('app', ['ngLodash'])
+            .controller('appCtrl', ['$scope', 'lodash', '$http', function ($scope, _, $http) {
+                $scope.page = {
+                    selectedImg: '',
+                    selectedDelete: ''
+                }
+                $scope.getAll = function () {
+                    $http.get('/getall').then(function (response) {
+                        console.log(response.data);
+                        $scope.items = response.data;
+                    })
+                }
+
+                $scope.itemDelete = function (event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    if (angular.element(event.target).hasClass('active')) {
+                        var name = this.item.name;
+                        $http.get('/delete', {
+                            params: {
+                                name: name,
+                            }
+                        })
+                                .then(function (response) {
+                                    alert(response.data);
+                                    $scope.$emit('onAfterUpload')
+                                });
+                    } else {
+                        $scope.page.selectedDelete = this.item.file;
+                    }
+
+
+                }
+
+                $scope.$on('onAfterUpload', function () {
+                    $scope.getAll();
+                });
+                $scope.getAll();
+
+            }])
+            .directive('dropZone', ['$http', function ($http) {
+                return {
+                    restrict: 'A',
+                    link: function (scope, element, attrs) {
+
+                        uploadImage = function (file, name) {
+                            $http({
+                                method: 'POST',
+                                url: '/update',
+                                data: {
+                                    img: file.split(',')[1],
+                                    name: name
+                                }
+                            }).then(function (response) {
+                                alert(response.data);
+                                scope.$emit('onAfterUpload')
+                            })
+                        }
+
+                        processDragOverOrEnter = function (event) {
+                            if (event != null) {
+                                event.preventDefault();
+                            }
+                            event.originalEvent.dataTransfer.effectAllowed = 'copy';
+                            return false;
+                        };
+
+                        processDrop = function (event) {
+                            var files, name, size, type;
+                            if (event != null) {
+                                event.preventDefault();
+                            }
+
+                            files = event.originalEvent.dataTransfer.files;
+                            for (var i = 0, ilen = files.length; i < ilen; i++) {
+                                var file = files[i];
+                                var reader = new FileReader();
+                                var name = file.name;
+                                reader.readAsDataURL(file);
+
+                                reader.onload = function (evt) {
+                                    scope.$apply(function () {
+                                        var _file = evt.target.result;
+                                        uploadImage(_file, name);
+                                    });
+                                };
+                            }
+                        }
+
+                        element.on('dragover', processDragOverOrEnter);
+                        element.on('dragenter', processDragOverOrEnter);
+                        element.on('drop', processDrop);
+
+                    }
+                }
+            }])
+</script>
+</html>
