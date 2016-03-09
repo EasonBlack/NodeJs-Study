@@ -1,4 +1,4 @@
-require("!style!css!less!./style/main.less");
+require("./style/main.less");
 
 var angular = require("angular");
 
