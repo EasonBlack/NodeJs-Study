@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title></title>
+
+</head>
+<body>
+<input type="file" name="file" id="file" accept="image/*">
+<input type="submit" id="btnSubmit">
+</body>
+<script src="/vendor/javascript/jquery-1.11.1.js"></script>
+<script>
+    var imageString = '';
+    var handleFileSelect = function(evt) {
+        var files = evt.target.files;
+        var file = files[0];
+
+        if (files && file) {
+            var reader = new FileReader();
+            reader.readAsBinaryString(file);
+            reader.onload = function(readerEvt) {
+                imageString =  btoa(readerEvt.target.result);
+            };
+        }
+    };
+
+    $('#file').on('change', handleFileSelect);
+    //document.getElementById('file').addEventListener('change', handleFileSelect, false);
+
+    $('#btnSubmit').click(function(){
+        $.ajax({
+            type: "POST",
+            url: "/upload2",
+            data: {
+                img: imageString
+            },
+            success: function(response){
+               alert(response);
+            }
+        })
+    });
+</script>
+</html>
