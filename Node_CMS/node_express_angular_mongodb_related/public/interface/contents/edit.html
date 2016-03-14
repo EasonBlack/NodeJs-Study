@@ -1,0 +1,27 @@
+<div class="contents-edit">
+    <div class="content-row">
+        <label>Name</label>
+        <input ng-model="content.name"/>
+    </div>
+    <div class="content-row">
+        <label>Relate</label>
+
+        <ui-select   ng-model="page.selected" >
+            <ui-select-match placeholder="...">{{$select.selected.name}}</ui-select-match>
+            <ui-select-choices repeat="c in page.contentList | filter: $select.search">
+                <div ng-bind-html="c.name | highlight: $select.search"></div>
+            </ui-select-choices>
+        </ui-select>
+        <a class="btn btn-default" ng-click="AddRelate()">Add</a>
+        <div class="content-relate-container">
+            <div class="content-relate-wrapper" ng-repeat="r in content.relates">
+                <span>{{r.name}}</span>
+                <span class='content-relate-delete' ng-click='DelRelate(r)'>x</span>
+            </div>
+        </div>
+
+    </div>
+    <div>
+        <a class="btn btn-primary" ng-click="submit()">Submit</a>
+    </div>
+</div>
