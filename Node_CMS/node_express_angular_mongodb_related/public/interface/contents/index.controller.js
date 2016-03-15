@@ -23,7 +23,7 @@ angular.module('app')
                 }
             }
         }
-        
+
         $scope.getRelate = function (content, index) {
             self.removeUlsContent(index);
             Service.getMultiByIds(content.relate)
