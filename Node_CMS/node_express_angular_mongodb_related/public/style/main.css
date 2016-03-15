@@ -10,10 +10,15 @@ html {
 .container-fluid {
   padding-top: 50px;
 }
+.contents-index .button-container {
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
 .contents-index ul {
   list-style: none;
   display: inline-block;
   vertical-align: top;
+  margin-left: 5px;
 }
 .contents-index .content-container {
   border: 1px solid #EEEEEE;
@@ -35,6 +40,9 @@ html {
 .contents-index li .content-relate-num {
   display: inline-block;
   width: 50px;
+}
+.contents-edit .content-row {
+  margin-bottom: 8px;
 }
 .contents-edit .content-row label {
   display: inline-block;

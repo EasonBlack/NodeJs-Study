@@ -6,9 +6,9 @@
     <div class="content-row">
         <label>Relate</label>
 
-        <ui-select   ng-model="page.selected" >
+        <ui-select   ng-model="view.selected" >
             <ui-select-match placeholder="...">{{$select.selected.name}}</ui-select-match>
-            <ui-select-choices repeat="c in page.contentList | filter: $select.search">
+            <ui-select-choices repeat="c in view.contentList | filter: $select.search">
                 <div ng-bind-html="c.name | highlight: $select.search"></div>
             </ui-select-choices>
         </ui-select>
@@ -23,5 +23,6 @@
     </div>
     <div>
         <a class="btn btn-primary" ng-click="submit()">Submit</a>
+        <a class="btn btn-default" ng-click="backList()">Back</a>
     </div>
 </div>

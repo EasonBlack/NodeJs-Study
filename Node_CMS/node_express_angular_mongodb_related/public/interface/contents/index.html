@@ -1,10 +1,14 @@
 
-
 <div class="contents-index">
-   <ul class="content-container" ng-repeat="ul in page.uls">
-       <li ng-repeat="c in ul">
-           <span class='content-name' ng-bind="c.name" ng-click="toDatail(c._id)">c.name</span>
-           <span class='content-relate-num' ng-bind="c.relate.length" ng-click="getRelate(c, $parent.$index)"></span>
-       </li>
-   </ul>
+    <div class="button-container">
+        <a class="btn btn-default" ng-click="toAdd()">Add</a>
+    </div>
+    <div>
+        <ul class="content-container" ng-repeat="ul in view.uls">
+            <li ng-repeat="c in ul">
+                <span class='content-name' ng-bind="c.name" ng-click="toDatail(c._id)">c.name</span>
+                <span class='content-relate-num' ng-bind="c.relate.length" ng-click="getRelate(c, $parent.$index)"></span>
+            </li>
+        </ul>
+    </div>
 </div>

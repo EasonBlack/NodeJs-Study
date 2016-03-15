@@ -1,31 +1,34 @@
 angular.module('app')
-    .controller('ContentEditController', ['$scope', '$http', 'lodash', '$routeParams', function ($scope, $http, _, $routeParams) {
+    .controller('ContentEditController', ['$scope', '$http', 'lodash', '$routeParams', 'ContentService', function ($scope, $http, _, $routeParams, Service) {
         var self = this;
         self.id = $routeParams.id;
 
-
-        $scope.page = {
-            contentList: []
-        }
         $scope.content = {
             relates: []
         }
+        $scope.view = {
+            contentList: [],
+            selected : {}
+        }
+
+        $scope.backList = function() {
+            window.location.href = '/#/contents/';
+        }
 
         $scope.refreshContentList = function (content) {
-            return $http.get(
-                '/api/content'
-            ).then(function (response) {
+            Service.getList()
+                .then(function (response) {
                     console.log(response);
-                    $scope.page.contentList = response.data;
+                    $scope.view.contentList = response.data;
                 });
         };
 
 
         $scope.AddRelate = function () {
-            if ($scope.page.selected) {
-                $scope.content.relates.push($scope.page.selected);
+            if ($scope.view.selected) {
+                $scope.content.relates.push($scope.view.selected);
             }
-            console.log($scope.page.selected);
+            console.log($scope.view.selected);
         }
 
         $scope.DelRelate = function (r) {
@@ -43,21 +46,13 @@ angular.module('app')
                 name: $scope.content.name,
                 relate: _.pluck($scope.content.relates, '_id')
             }
-            if (self.id) {
-                $http({
-                    method: 'PUT',
-                    url: '/api/content/' + self.id,
-                    data: data
-                })
+            if (self.id != 0) {
+                Service.putContent(self.id, data)
                     .then(function (response) {
                         alert(response.data);
                     });
             } else {
-                $http({
-                    method: 'POST',
-                    url: '/api/content',
-                    data: data
-                })
+                Service.postContent(data)
                     .then(function (response) {
                         alert(response.data);
                     });
@@ -65,10 +60,9 @@ angular.module('app')
         }
 
         self.init = function () {
-            if (self.id) {
-                $http.get(
-                    '/api/content/' + self.id
-                ).then(function (response) {
+            if (self.id != 0) {
+                Service.getById(self.id)
+                    .then(function (response) {
                         $scope.content = response.data;
                     });
             }
