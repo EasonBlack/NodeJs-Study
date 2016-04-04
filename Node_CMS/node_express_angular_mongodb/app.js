@@ -62,6 +62,14 @@ app.post('/update', function (req, res) {
     var img = req.body.img;
     var dataBuffer = new Buffer(img, 'base64');
     var _guidName = uuid.v1();
+
+    var dir = './image';
+
+    if (!fs.existsSync(dir)){
+        fs.mkdirSync(dir);
+        console.log('add image folder successfully');
+    }
+
     fs.writeFile('image/' + _guidName + ".png", dataBuffer, function (err) {
         if (err) {
             res.send(err);
