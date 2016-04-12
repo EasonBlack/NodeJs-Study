@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+</head>
+<body>
+ This is Client Page!
+ <div>
+     <input type="text" id="txtNum"/>
+ </div>
+ <div id="message"></div>
+ <div>
+     <button id="btnConfirm">Number Confirm</button>
+ </div>
+
+</body>
+<script src="/vendor/jquery-1.11.1.js"></script>
+<script src="/vendor/lodash.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var socket = io();
+    socket.on('confirm', function(data){
+        $('#message').html(data.number);
+    });
+
+    $('#btnConfirm').click(function (e) {
+        e.preventDefault();
+        var _num = $('#txtNum').val()
+        socket.emit('pay', {number: _num });
+    });
+</script>
+</html>

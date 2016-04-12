@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+</head>
+<body>
+   This is Server Page
+   <div id="message"></div>
+</body>
+<script src="/vendor/jquery-1.11.1.js"></script>
+<script src="/vendor/lodash.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var socket = io();
+    socket.on('confirm', function(data){
+        console.log('get from server')
+        $('#message').html(data.number);
+    });
+</script>
+</html>
