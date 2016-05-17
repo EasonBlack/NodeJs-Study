@@ -3,6 +3,7 @@ var Schema = mongoose.Schema;
 
 var DailyItemSchema = new Schema({
     type: String,
+    name: String,
     trophy: String,
     time: String,
     ref: String
