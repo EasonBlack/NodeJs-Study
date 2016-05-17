@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+  <input type="file" id="i1" accept="image/*"  />
+  <button id="b1">Submit</button>
+</body>
+<script src="../../../vendor/javascript/jquery-1.11.1.js"></script>
+<script>
+    $('#b1').click(function(){
+        var imgs = new FormData();
+        imgs.append("upl",  $('#i1').get(0).files[0]);
+        imgs.append("name", 'eason');
+        $.ajax({
+            url: 'http://localhost:2005/file',
+            data: imgs,
+            processData: false,
+            contentType: false,
+            type: 'POST',
+            success: function(data){
+                console.log(data);
+            }
+        });
+
+    });
+</script>
+</html>
