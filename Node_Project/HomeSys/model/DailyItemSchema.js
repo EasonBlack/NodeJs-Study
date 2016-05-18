@@ -5,8 +5,7 @@ var DailyItemSchema = new Schema({
     type: String,
     name: String,
     trophy: String,
-    time: String,
-    ref: String
+    time: String
 });
 
 var DailyItem = mongoose.model('DailyItem', DailyItemSchema);
