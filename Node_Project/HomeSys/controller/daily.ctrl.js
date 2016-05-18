@@ -31,14 +31,14 @@ exports.DailyListById = function (req, res) {
 exports.DailyAddItem = function (req, res) {
     var _date = req.param('date');
     Daily.findOne({date: _date}, function (err, daily) {
-        var newItem = new DailyItem(req.body);
-        if(newItem._id) {
-            var _item = daily.items.id(_id);
-            _item.type = newItem.type;
-            _item.time = newItem.time;
-            _item.trophy = newItem.trophy;
-            _item.ref = newItem.ref;
+        if(req.body._id) {
+            var _item = daily.items.id(req.body._id);
+            _item.type = req.body.type;
+            _item.time = req.body.time;
+            _item.trophy = req.body.trophy;
+            _item.ref = req.body.ref;
         } else {
+            var newItem = new DailyItem(req.body);
             daily.items.push(newItem);
         }
         daily.save(function (err) {
