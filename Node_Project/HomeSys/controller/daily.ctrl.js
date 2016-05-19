@@ -31,12 +31,12 @@ exports.DailyListById = function (req, res) {
 exports.DailyAddItem = function (req, res) {
     var _date = req.param('date');
     Daily.findOne({date: _date}, function (err, daily) {
-        if(req.body._id) {
+        if (req.body._id) {
             var _item = daily.items.id(req.body._id);
             _item.type = req.body.type;
             _item.time = req.body.time;
             _item.trophy = req.body.trophy;
-            _item.ref = req.body.ref;
+            _item.content =  req.body.content;
         } else {
             var newItem = new DailyItem(req.body);
             daily.items.push(newItem);
@@ -57,21 +57,21 @@ exports.DailyModifyItem = function (req, res) {
         _item.type = newItem.type;
         _item.time = newItem.time;
         _item.trophy = newItem.trophy;
-        _item.ref = newItem.ref;
-        series.save(function(err) {
+        _item.content = newItem.content;
+        series.save(function (err) {
             if (err) throw err;
             res.send('update daily item success');
         });
     });
 }
 
-exports.DailyDeleteItem = function(req, res){
+exports.DailyDeleteItem = function (req, res) {
     var _date = req.param('date');
     var _id = req.param('id');
-    Daily.findOne({date: _date  }, function (err, daily) {
+    Daily.findOne({date: _date}, function (err, daily) {
         var _item = daily.items.id(_id);
         _item.remove();
-        daily.save(function(err) {
+        daily.save(function (err) {
             if (err) throw err;
             res.send(daily.items);
         });

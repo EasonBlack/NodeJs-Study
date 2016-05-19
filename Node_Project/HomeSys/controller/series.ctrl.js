@@ -19,6 +19,25 @@ exports.GetSeriesById = function (req, res) {
     });
 }
 
+exports.GetSeriesItemByrefId = function (req, res) {
+    var refid = req.param('refid');
+    console.log(refid);
+    Series.findOne({'items.ref': req.param('refid')}, function (err, data) {
+        if (err) return console.log(err);
+        var result = {};
+        if(!data) {
+            res.send(null);
+            return ;
+        }
+        var _item = data.items.filter((i)=> {
+            return i.ref == refid
+        })[0];
+        result.item = _item;
+        result.seriesid=data._id;
+        res.send(result);
+    });
+}
+
 exports.SetSeries = function (req, res) {
     Series.findOne({_id: req.param('id')}, function (err, series) {
         if (err) return console.log(err);
