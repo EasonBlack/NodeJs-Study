@@ -33,6 +33,7 @@ exports.GetSeriesItemByrefId = function (req, res) {
             return i.ref == refid
         })[0];
         result.item = _item;
+        result.seriesname = data.name;
         result.seriesid=data._id;
         res.send(result);
     });

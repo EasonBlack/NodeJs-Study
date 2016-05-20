@@ -11,6 +11,13 @@ exports.ITList = function (req, res) {
     });
 }
 
+exports.getITById = function (req, res) {
+    IT.findOne({_id: req.param('id')}, function (err, item) {
+        res.send(item);
+    });
+}
+
+
 exports.ITAdd = function (req, res) {
     var newIT = new IT(req.body);
     console.log(req.body);

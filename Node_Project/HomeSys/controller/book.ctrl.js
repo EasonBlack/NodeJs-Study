@@ -6,7 +6,7 @@ var Book = require('../model/BookSchema');
 
 
 exports.BookList = function (req, res) {
-    Book.findOne({}, function (err, books) {
+    Book.find({}, function (err, books) {
         res.send(books);
     });
 }

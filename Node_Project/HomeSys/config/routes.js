@@ -2,6 +2,7 @@ var seriesCtrl = require('../controller/series.ctrl');
 var dailyCtrl = require('../controller/daily.ctrl');
 var bookCtrl = require('../controller/book.ctrl');
 var ItCtrl = require('../controller/it.ctrl');
+var FilmCtrl = require('../controller/film.ctrl');
 var multer = require('multer');
 
 
@@ -24,8 +25,12 @@ module.exports = function (app) {
     app.get('/book/:refid', bookCtrl.getBookByRef);
     app.post('/book', bookCtrl.BookAdd);
 
+    app.get('/film/:refid', FilmCtrl.getFilmByRef);
+    app.post('/film', FilmCtrl.FilmAdd);
+
     app.get('/it', ItCtrl.ITList);
     app.post('/it', ItCtrl.ITAdd);
+    app.get('/it/:id', ItCtrl.getITById);
 
 }
 
