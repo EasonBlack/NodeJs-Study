@@ -20,6 +20,20 @@ exports.FilmAdd = function (req, res) {
     });
 }
 
+exports.FilmUpdate = function (req, res) {
+    var newFilm = new Film(req.body);
+    Film.findOne({_id: req.param('id')}, function (err, film) {
+        if(!film) res.send('');
+        film.comment = newFilm.comment;
+        film.name = newFilm.name;
+        film.save(function (err) {
+            if (err) throw err;
+            res.send(film);
+        });
+
+    });
+}
+
 
 exports.getFilmByRef = function (req, res) {
     var refid = req.param('refid');
