@@ -37,6 +37,7 @@ module.exports = function (app) {
     app.get('/item/:id', ItemCtrl.getItemById);
     app.get('/item', ItemCtrl.List);
     app.post('/item', ItemCtrl.ItemAdd);
+    app.put('/item/:id', ItemCtrl.ItemUpdateById);
 
 }
 

@@ -12,5 +12,5 @@ fs.readdirSync(__dirname)
     .forEach(function(file) {
         modelItem = _.extend(modelItem, require(path.join(__dirname, file)));
     });
-   console.log(modelItem);
+   //console.log(modelItem);
 module.exports = modelItem;

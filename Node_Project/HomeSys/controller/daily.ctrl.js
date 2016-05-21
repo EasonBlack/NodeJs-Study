@@ -4,7 +4,7 @@ var ObjectId = require('mongoose').Types.ObjectId;
 var moment = require('moment');
 var Daily = require('../model/DailySchema');
 var DailyItem = require('../model/DailyItemSchema');
-
+var DailyItem = require('../model/DailyItemSchema');
 
 exports.DailyListByDate = function (req, res) {
     var _date = req.param('date');
