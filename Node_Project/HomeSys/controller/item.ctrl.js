@@ -4,6 +4,8 @@ var ObjectId = require('mongoose').Types.ObjectId;
 require('../model/HouseSchema')
 require('../model/StudySchema')
 require('../model/JobSchema')
+require('../model/ItSchema')
+require('../model/BookSchema')
 var moment = require('moment');
 
 var mongoose = require('mongoose');
@@ -21,8 +23,17 @@ exports.getItemById = function (req, res) {
     var type = req.param('type');
     var id = req.param('id');
     var _model = mongoose.model(type);
-    _model.findOne({_id: id}).remove(function () {
-        res.send('success');
+    _model.findOne({_id: id}, function (err, item) {
+        res.send(item);
+    });
+}
+
+exports.getItemByRef = function (req, res) {
+    var type = req.param('type');
+    var id = req.param('id');
+    var _model = mongoose.model(type);
+    _model.findOne({ref: id}, function (err, item) {
+        res.send(item);
     });
 }
 
@@ -30,13 +41,8 @@ exports.ItemDeleteById = function (req, res) {
     var type = req.param('type');
     var id = req.param('id');
     var _model = mongoose.model(type);
-    _model.findOne({_id: id}, function (err, series) {
-        var _item = series.items.id(itemid);
-        _item.remove();
-        series.save(function (err) {
-            if (err) throw err;
-            res.send(series.items);
-        });
+    _model.findOne({_id: id}).remove(function(){
+        res.send(true);
     })
 }
 
@@ -56,17 +62,14 @@ exports.ItemUpdateById = function (req, res) {
     var type = req.param('type');
     var id = req.param('id');
     var _model = mongoose.model(type);
-    //var newItem = new _model(req.body);
 
     _model.findOne({_id: id}, function (err, item) {
         for(o in req.body) {
             if(o.indexOf('_')==-1){
-                console.log(o);
                 item[o] = req.body[o];
             }
         }
 
-        console.log(item);
         item.save(function (err) {
             if (err) throw err;
             res.send(item);

@@ -51,16 +51,15 @@ exports.DailyAddItem = function (req, res) {
 exports.DailyModifyItem = function (req, res) {
     var _date = req.param('date');
     var _id = req.param('id');
-    var newItem = new DailyItem(req.body);
     Daily.findOne({date: _date}, function (err, daily) {
         var _item = daily.items.id(_id);
-        _item.type = newItem.type;
-        _item.time = newItem.time;
-        _item.trophy = newItem.trophy;
-        _item.content = newItem.content;
-        series.save(function (err) {
+        _item.type = req.body.type;
+        _item.time = req.body.time;
+        _item.trophy = req.body.trophy;
+        _item.content = req.body.content;
+        daily.save(function (err) {
             if (err) throw err;
-            res.send('update daily item success');
+            res.send(daily);
         });
     });
 }

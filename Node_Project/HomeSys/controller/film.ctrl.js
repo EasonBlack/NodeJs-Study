@@ -13,7 +13,6 @@ exports.FilmList = function (req, res) {
 
 exports.FilmAdd = function (req, res) {
     var newFilm = new Film(req.body);
-    console.log(req.body);
     newFilm.save(function (err) {
         if (err) throw err;
         res.send(newFilm);
@@ -37,7 +36,6 @@ exports.FilmUpdate = function (req, res) {
 
 exports.getFilmByRef = function (req, res) {
     var refid = req.param('refid');
-    console.log(refid);
     Film.findOne({ref: refid}, function (err, film) {
         if(!film) res.send('');
         res.send(film);

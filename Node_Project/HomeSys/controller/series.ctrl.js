@@ -21,7 +21,6 @@ exports.GetSeriesById = function (req, res) {
 
 exports.GetSeriesItemByrefId = function (req, res) {
     var refid = req.param('refid');
-    console.log(refid);
     Series.findOne({'items.ref': req.param('refid')}, function (err, data) {
         if (err) return console.log(err);
         var result = {};

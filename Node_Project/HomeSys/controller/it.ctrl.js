@@ -20,7 +20,6 @@ exports.getITById = function (req, res) {
 
 exports.ITAdd = function (req, res) {
     var newIT = new IT(req.body);
-    console.log(req.body);
     newIT.save(function (err) {
         if (err) throw err;
         IT.find({}, function (err, items) {
