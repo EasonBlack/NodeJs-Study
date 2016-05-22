@@ -6,6 +6,7 @@ require('../model/StudySchema')
 require('../model/JobSchema')
 require('../model/ItSchema')
 require('../model/BookSchema')
+require('../model/FilmSchema')
 var moment = require('moment');
 
 var mongoose = require('mongoose');
@@ -62,7 +63,6 @@ exports.ItemUpdateById = function (req, res) {
     var type = req.param('type');
     var id = req.param('id');
     var _model = mongoose.model(type);
-
     _model.findOne({_id: id}, function (err, item) {
         for(o in req.body) {
             if(o.indexOf('_')==-1){

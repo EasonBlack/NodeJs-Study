@@ -25,6 +25,7 @@ exports.FilmUpdate = function (req, res) {
         if(!film) res.send('');
         film.comment = newFilm.comment;
         film.name = newFilm.name;
+        film.date = newFilm.date;
         film.save(function (err) {
             if (err) throw err;
             res.send(film);
