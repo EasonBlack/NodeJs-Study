@@ -26,9 +26,11 @@ module.exports = function (app) {
     app.get('/book/:refid', bookCtrl.getBookByRef);
     app.post('/book', bookCtrl.BookAdd);
 
+    app.get('/film', FilmCtrl.FilmList);
     app.get('/film/:refid', FilmCtrl.getFilmByRef);
     app.post('/film', FilmCtrl.FilmAdd);
     app.put('/film/:id', FilmCtrl.FilmUpdate);
+
 
     app.get('/it', ItCtrl.ITList);
     app.post('/it', ItCtrl.ITAdd);

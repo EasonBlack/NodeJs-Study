@@ -4,6 +4,7 @@ var Schema = mongoose.Schema;
 var FilmSchema = new Schema({
     name: String,
     comment: String,
+    date: String,
     ref: String
 
 });
