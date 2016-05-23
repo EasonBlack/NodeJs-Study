@@ -77,3 +77,27 @@ exports.DailyDeleteItem = function (req, res) {
     })
 }
 
+exports.Daily7DaysList = function(req, res){
+    var _dateNow = req.param('date');
+    var _dateBefore = moment(_dateNow).subtract(7,'days').format('YYYY-MM-DD');
+    Daily.find({ date: {$gte : _dateBefore, $lte: _dateNow}}, function (err, items) {
+        res.send(items);
+    });
+}
+
+exports.DailyItemsList = function(req, res){
+    var _datestart = req.param('datestart');
+    var _dateend = req.param('dateend');
+    console.log(_datestart, _dateend);
+    Daily.find({ date: {$gte : _datestart, $lte: _dateend}}, function (err, items) {
+        var result = [];
+        console.log(items);
+        items.forEach((item)=>{
+            result.push.apply(result, item.items)
+        })
+        res.send(result);
+    });
+}
+
+
+

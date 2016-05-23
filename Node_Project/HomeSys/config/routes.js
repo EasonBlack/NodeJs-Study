@@ -21,6 +21,8 @@ module.exports = function (app) {
     app.post('/daily/:date', dailyCtrl.DailyAddItem);
     app.post('/daily/:date/:id', dailyCtrl.DailyModifyItem);
     app.delete('/daily/:date/:id', dailyCtrl.DailyDeleteItem);
+    app.get('/daily-7/:date', dailyCtrl.Daily7DaysList);
+    app.get('/daily-items-total', dailyCtrl.DailyItemsList);
 
 
     app.get('/book/:refid', bookCtrl.getBookByRef);
