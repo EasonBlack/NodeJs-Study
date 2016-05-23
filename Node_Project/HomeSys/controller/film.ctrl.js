@@ -6,9 +6,12 @@ var Film = require('../model/FilmSchema');
 
 
 exports.FilmList = function (req, res) {
-    Film.find({}, function (err, films) {
+    Film.find({}).sort({date: -1}).exec(function(err, films) {
         res.send(films);
     });
+    //Film.find({}, function (err, films) {
+    //    res.send(films);
+    //});
 }
 
 exports.FilmAdd = function (req, res) {
@@ -30,7 +33,6 @@ exports.FilmUpdate = function (req, res) {
             if (err) throw err;
             res.send(film);
         });
-
     });
 }
 

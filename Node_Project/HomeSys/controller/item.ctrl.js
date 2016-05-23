@@ -7,6 +7,7 @@ require('../model/JobSchema')
 require('../model/ItSchema')
 require('../model/BookSchema')
 require('../model/FilmSchema')
+require('../model/WritingSchema')
 var moment = require('moment');
 
 var mongoose = require('mongoose');
@@ -15,7 +16,7 @@ var mongoose = require('mongoose');
 exports.List = function (req, res) {
     var type = req.param('type');
     var _model = mongoose.model(type);
-    _model.find({}, function (err, items) {
+    _model.find({}).sort({date: -1}).exec(function(err, items) {
         res.send(items);
     });
 }
