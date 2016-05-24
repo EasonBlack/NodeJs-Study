@@ -9,9 +9,6 @@ exports.FilmList = function (req, res) {
     Film.find({}).sort({date: -1}).exec(function(err, films) {
         res.send(films);
     });
-    //Film.find({}, function (err, films) {
-    //    res.send(films);
-    //});
 }
 
 exports.FilmAdd = function (req, res) {
@@ -29,13 +26,13 @@ exports.FilmUpdate = function (req, res) {
         film.comment = newFilm.comment;
         film.name = newFilm.name;
         film.date = newFilm.date;
+        film.something = newFilm.something;
         film.save(function (err) {
             if (err) throw err;
             res.send(film);
         });
     });
 }
-
 
 exports.getFilmByRef = function (req, res) {
     var refid = req.param('refid');

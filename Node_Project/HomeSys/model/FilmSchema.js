@@ -5,8 +5,8 @@ var FilmSchema = new Schema({
     name: String,
     comment: String,
     date: String,
-    ref: String
-
+    ref: String,
+    something: String
 });
 
 var Film = mongoose.model('Film', FilmSchema);
