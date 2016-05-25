@@ -6,6 +6,7 @@ require('../model/StudySchema')
 require('../model/JobSchema')
 require('../model/ItSchema')
 require('../model/BookSchema')
+require('../model/ComicSchema')
 require('../model/FilmSchema')
 require('../model/WritingSchema')
 var moment = require('moment');
