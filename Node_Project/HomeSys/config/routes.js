@@ -23,6 +23,7 @@ module.exports = function (app) {
     app.delete('/daily/:date/:id', dailyCtrl.DailyDeleteItem);
     app.get('/daily-7/:date', dailyCtrl.Daily7DaysList);
     app.get('/daily-items-total', dailyCtrl.DailyItemsList);
+    app.get('/daily-total', dailyCtrl.DailyListBySpan);
 
 
     app.get('/book/:refid', bookCtrl.getBookByRef);

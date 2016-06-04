@@ -99,5 +99,14 @@ exports.DailyItemsList = function(req, res){
     });
 }
 
+exports.DailyListBySpan = function(req, res){
+    var _datestart = req.param('datestart');
+    var _dateend = req.param('dateend');
+    console.log(_datestart, _dateend);
+    Daily.find({ date: {$gte : _datestart, $lte: _dateend}}, function (err, items) {
+        res.send(items);
+    });
+}
+
 
 
