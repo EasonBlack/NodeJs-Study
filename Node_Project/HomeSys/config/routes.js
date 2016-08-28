@@ -4,6 +4,7 @@ var bookCtrl = require('../controller/book.ctrl');
 var ItCtrl = require('../controller/it.ctrl');
 var FilmCtrl = require('../controller/film.ctrl');
 var ItemCtrl = require('../controller/item.ctrl');
+var CurrentReadingCtrl = require('../controller/currentReading.ctrl');
 var multer = require('multer');
 
 
@@ -28,6 +29,10 @@ module.exports = function (app) {
 
     app.get('/book/:refid', bookCtrl.getBookByRef);
     app.post('/book', bookCtrl.BookAdd);
+
+    app.get('/currentreading', CurrentReadingCtrl.CurrentReadingList);
+    app.post('/currentreading', CurrentReadingCtrl.CurrentReadingAdd);
+    app.put('/currentreading/:id', CurrentReadingCtrl.CurrentReadingModifyById);
 
     app.get('/film', FilmCtrl.FilmList);
     app.get('/film/:refid', FilmCtrl.getFilmByRef);
