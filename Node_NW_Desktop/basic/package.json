@@ -5,6 +5,7 @@
     "toolbar": false,
     "width" : 200,
     "height": 500,
-    "always-on-top" : false
+    "always-on-top" : false,
+    "fullscreen": true
   }
 }

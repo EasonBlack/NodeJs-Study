@@ -35,9 +35,9 @@ function readFile(path, f) {
     var _words = [];
     var source = fs.readFileSync(path, "UTF-8");
     //get chinese between <><>
-    //\uFF0C £¬
-    //\u3002 ¡£
-    //\u3001 ¡¢
+    //\uFF0C ï¿½ï¿½
+    //\u3002 ï¿½ï¿½
+    //\u3001 ï¿½ï¿½
     var _regex = />([\u4E00-\u9FFF\u3400-\u4DFF\uFF0C\u3002\u3001]+)</g;
     var match;
     while ( (match = _regex.exec(source)) !== null) {
