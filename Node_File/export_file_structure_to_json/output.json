@@ -1,0 +1,154 @@
+{
+  "items": [
+    ".gitignore",
+    "bak",
+    "package.json",
+    "Procfile",
+    "server.js",
+    "xxx.sql"
+  ],
+  ".idea": {
+    "items": [
+      ".name",
+      "encodings.xml",
+      "jsLibraryMappings.xml",
+      "misc.xml",
+      "modules.xml",
+      "test.iml",
+      "vcs.xml",
+      "watcherTasks.xml",
+      "workspace.xml"
+    ]
+  },
+  "build": {
+    "items": [
+      "bundle.js"
+    ]
+  },
+  "client": {
+    "items": [
+      "app.js",
+      "app_.js",
+      "index.html",
+      "login.html",
+      "webpack.config.dev.js",
+      "webpack.config.js"
+    ],
+    "fonts": {
+      "items": [
+        "glyphicons-halflings-regular.woff",
+        "glyphicons-halflings-regular.woff2",
+        "SFUIText-Medium.ttf",
+        "SFUIText-Regular.ttf",
+        "SFUIText-Semibold.ttf"
+      ]
+    },
+    "images": {
+      "items": [
+        "checks.png"
+      ]
+    },
+    "modules": {
+      "quest": {
+        "components": {
+          "items": [
+            "quest.input.component.js",
+            "quest.input.template.html"
+          ]
+        },
+        "list-page": {
+          "items": [
+            "quest.list.controller.js",
+            "quest.list.view.html"
+          ]
+        },
+        "quest-complete": {
+          "items": [
+            "quest.complete.controller.js",
+            "quest.complete.view.html"
+          ]
+        },
+        "items": [
+          "quest.constant.js",
+          "quest.module.js",
+          "quest.route.js"
+        ],
+        "service": {
+          "items": [
+            "answer.store.service.js"
+          ]
+        },
+        "test-page": {
+          "items": [
+            "quest.controller.js",
+            "quest.view.html"
+          ]
+        }
+      },
+      "question-answer": {
+        "items": [
+          "question-answer.controller.js",
+          "question-answer.module.js",
+          "question-answer.route.js",
+          "question-answer.template.html"
+        ]
+      },
+      "question-gen": {
+        "new": {
+          "items": [
+            "question-new.component.js",
+            "question-new.controller.js",
+            "question-new.template.html"
+          ]
+        },
+        "items": [
+          "question-gen.controller.js",
+          "question-gen.module.js",
+          "question-gen.route.js",
+          "question-gen.template.html"
+        ]
+      },
+      "service": {
+        "items": [
+          "question.service.js"
+        ]
+      }
+    },
+    "style": {
+      "items": [
+        "bootstrap.glyphicon.css",
+        "components.login.css",
+        "components.login.less",
+        "components.quest-complete.css",
+        "components.quest-complete.less",
+        "components.quest.less",
+        "components.question-gen.css",
+        "components.question-gen.less",
+        "components.question-new.css",
+        "components.question-new.less",
+        "components.radio.css",
+        "components.radio.less",
+        "components.ribbon.css",
+        "components.ribbon.less",
+        "components.textarea.css",
+        "components.textarea.less",
+        "generic.normalize.css",
+        "generic.normalize.less",
+        "main.css",
+        "main.less",
+        "objects.layout.css",
+        "objects.layout.less",
+        "objects.text.css",
+        "objects.text.less",
+        "settings.global.css",
+        "settings.global.less"
+      ]
+    },
+    "vendor": {
+      "items": [
+        "jquery.cookie.min.js",
+        "jquery.min.js"
+      ]
+    }
+  }
+}
