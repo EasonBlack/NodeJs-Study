@@ -1,0 +1,16 @@
+
+
+ul {
+    list-style:none;
+}
+
+
+.btn__confirm {
+    display:inline-block;
+    width:150px;
+    height:40px;
+    line-height:40px;
+    text-align: center;
+    background-color:steelblue;
+    color:white;
+}
