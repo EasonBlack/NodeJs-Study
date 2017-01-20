@@ -8,8 +8,10 @@
     <link href="assets/style/main.css" rel="stylesheet"/>
     <script src="assets/js/vue.min.js"></script>
     <script src="assets/js/vue-resource.min.1.0.3.js"></script>
-    <script src="assets/js/vue-validator.min.js"></script>
+    <script src="assets/js/vee-validator.min.js"></script>
+    <script>
 
+    </script>
 </head>
 <body>
 <div id="app">
@@ -39,7 +41,7 @@
         template: '<div>' +
         '<label>{{title}}</label>' +
         '<div>' +
-        '<input type="text" :value="value"  @input="$emit(\'input\', $event.target.value)" />' +
+        '<input type="text" :value="value"   @input="$emit(\'input\', $event.target.value)" />' +
         '</div>' +
         '</div>'
     })

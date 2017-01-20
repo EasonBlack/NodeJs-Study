@@ -19,7 +19,7 @@ client.connect();
 module.exports = function (app) {
 
     app.get('*', function (req, res) {
-        res.sendFile(path.join(__dirname, '../public/index.html'));
+        res.sendfile(path.join(__dirname, '../public/index.html'));
     })
 
     app.post('/api/survey', function (req, res) {
