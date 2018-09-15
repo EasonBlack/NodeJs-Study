@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-cn" ng-app="app">
+<head>
+  <link href="/static/css/bootstrap.css" rel="stylesheet"/>
+  <link href="/static/css/main.css" rel="stylesheet"/>
+</head>
+<body>
+  <div class='container-fluid'  ng-controller="Controller" ng-cloak>
+    <div class='row item-wrapper' >
+      <div class='col-md-12'>
+        <ul ng-repeat="item in items">
+          <li  ng-click="detail(item.id)">
+            {{item.name}}
+          </li>  
+        </ul>
+        <button ng-if='!editDisplayFlag' ng-click='editDisplay()'>New</button>
+      </div>
+    </div>
+
+    <div  class="modal fade" tabindex="-1" role="dialog" id='editModal'>
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Item Edit</h5>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="input_value">Value:</label>
+                    <input class="form-control"  id='input_value' ng-model='editItem.value' />
+                </div>
+                <div class="form-group">
+                    <label for="input_name">Name:</label>
+                    <input class="form-control"  id='input_name' ng-model='editItem.name' />
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button ng-if='editItem.id' ng-click='edit(editItem.id)'>Edit Save</button>
+              <button ng-if='!editItem.id' ng-click='add()'>New Save</button>
+              <button ng-click='reset()'>Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+ 
+<script src="/static/js/lib/angular.min.js"></script>
+<script src="/static/js/lib/jquery.min.js"></script>
+<script src="/static/js/lib/bootstrap.min.js"></script>
+<script src="/static/js/app.js"></script>
+<script src="/static/js/main.js"></script>
+</body>
+</html>
