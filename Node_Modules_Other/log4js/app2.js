@@ -2,8 +2,6 @@ var log4js = require('log4js');
 
 log4js.configure({
   appenders: {
-    console: { type: 'console' },
-    //file: { type: 'file', filename: './log/log4jsconnect.log' },
     dateFile: {
       type: 'dateFile',
       filename: './log/date.log',
@@ -11,13 +9,12 @@ log4js.configure({
     },
   },
   categories: {
-    default: { appenders: ['console'], level: 'debug' },
-    log4jslog: { appenders: ['dateFile'], level: 'info' }
+    default: { appenders: ['dateFile'], level: 'debug' },
   }
 });
 
 
-var logger = log4js.getLogger('log4jslog');
+var logger = log4js.getLogger('check');
 
 setInterval(()=>{
   logger.info("Some debug messages")
