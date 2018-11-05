@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Hello World!</h1>
+<script> 
+  const remote = require('electron').remote; 
+  console.log(remote.getGlobal('sharedObject').someProperty); 
+  console.log(remote.getGlobal('demoData')); 
+  
+</script>
+
+<script type="text/javascript">
+  var fs = require('fs');
+  var file = fs.readFileSync('test.json');  
+  console.log( JSON.parse(file));
+</script>
+
+<script>
+  const {ipcRenderer} = require('electron')
+  ipcRenderer.send('test-request', "aaaaaa");
+  ipcRenderer.on('test-get', (event, res)=>{
+    console.log(res);
+  })
+</script>
+</body>
+</html>
